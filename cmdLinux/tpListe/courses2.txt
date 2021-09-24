@@ -1,0 +1,24 @@
+2,tomate,carrefour
+4,choux de bruxelles,dia
+1,poivron jaune,dia
+2,carotte,dia
+7,pomme de terre,carrefour
+2,choux fleur,casino
+7,raisin muscat,carrefour
+5,amande,dia
+2,banane,casino
+30,Cerise,carrefour
+4,melon,carrefour
+1,Ail,casino
+4,orange,casino
+1,Ananas,carrefour
+2,anis,casino
+3,oignon,carrefour
+12,oeufs bio,casino
+1,poire,carrefour
+2,tomate,carrefour
+6,tomate cerise,casino
+4,Framboises,casino
+1,poulet intermédiaire,carrefour
+2,choux fleur,casino
+6,fruit de la passion,dia

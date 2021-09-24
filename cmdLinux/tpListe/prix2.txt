@@ -1,0 +1,29 @@
+raisin Italia,01,3.90
+raisin muscat,02,2.60
+banane,03,2.80
+haricot,04,2.50
+carotte,05,2.70
+abricot,06,3.60
+melon,07,1.90
+Cerise,08,4.99
+oeufs bio,09,5.90
+choux de bruxelles,10,4.70
+choux fleur,11,2.60
+oignon,12,1.70
+Ail,13,2.50
+gingembre,14,4.10
+amande,15,10.75
+Ananas,16,3.30
+anis,17,2.90
+poire,18,4.70
+poivron jaune,19,2.15
+tomate,20,2.45
+tomate cerise,21,4.60
+pomme de terre,22,1.20
+pomme granny,23,4.70
+poulet intermédiaire,24,7.85
+courge,25,2.70
+courgette,26,6.35
+Framboises,27,4.70
+orange,28,0.90
+fruit de la passion,29,7.25

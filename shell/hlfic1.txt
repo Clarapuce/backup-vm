@@ -1,0 +1,3 @@
+coucou, ca va ? 
+Il reste dix minutes de cours
+Faisons un script durant ce laps de temps

@@ -1,0 +1,48 @@
+body {
+    margin:10%;}
+
+fieldset {
+    margin:2%;
+    border-radius: 10px;
+}
+
+legend {
+    font-size : 18px;
+}
+
+input[type=submit] {
+    margin-left:5%;
+}
+
+.nom{
+    border : red solid 3px;
+}
+
+.prenom {
+    border : violet solid 3px;
+}
+
+.container {
+    display : grid;
+    grid-template-areas : "header header header"
+                            "info info valider"
+                            "type type valider";
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 3fr 3fr 2fr;
+}
+
+.info {
+    grid-area : info;
+}
+
+.type{
+    grid-area : type;
+}
+
+.valider {
+    grid-area : valider;
+}
+
+h1 {
+    grid-area : header;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TP Javascript</h1>
+    <h2>Declarations en javascript</h1>
+    <p>Un programme Javascript est une liste de declarations  executer sur un ordi.</p>
+    <p id="demo1"></p>
+
+    <script>
+        var x,y,z;
+        x=5; y=6;z=x+y;
+
+        document.getElementById("demo1").innerHTML = "La valeur de "+z+"." ;
+    </script>
+
+
+
+    <h2>Les strings dans Javascript</h2>
+    <p>Les string peuvent etre ecrits avec double et simple quote.</p>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById("demo2").innerHTML = 'John Doe avec simple quote. ';
+        document.getElementById("demo2").innerHTML += "John Doe avec double quote. ";
+        document.getElementById("demo2").innerHTML += 'John'+' Doe avec concatenation.';
+    </script>
+
+
+    <h2>Variables</h2>
+    <p id="demo3">Une variable peut etre declaree sans valeur. On peut faire des tableaux. On peut afficher le type d'une var.</p>
+    <script>
+        var indefinie;
+        var x = 10; x+=5;x*=5;x++;x--;
+        var tab = ["elem1","elem2","elem3"]
+        document.getElementById("demo3").innerHTML += "<br>" + indefinie+"<br>x = "+x;
+        document.getElementById("demo3").innerHTML += "<br> <b>tableau</b> : " + tab + "  -  premier element : "+ tab[0];
+        document.getElementById("demo3").innerHTML+= "<br>type de 0 : "+typeof 0 +" - type de 3,14 : "+ typeof 3.14 + " - type de (3.14) : "+ typeof (3.14);
+    </script>
+
+    <h2>Exercice : Fahrenheit en Celsius</h2>
+    <p id="demo4">Cette exemple appelle une fonction qui converti les Farhenheit en Celsius..</p>
+    <script>
+        var temperatureF = 50;
+        var temperatureC = Far2Cel(temperatureF);
+        document.getElementById("demo4").innerHTML += '<br> Fonction sans parentheses : '+Far2Cel;
+        document.getElementById("demo4").innerHTML += "<br> Temperature en F : "+temperatureF+" donne en C : "+temperatureC;
+        function Far2Cel(temp){
+            return (temp-32)/1.8;
+        }
+    </script>
+
+    <h2>Evenements Javascript</h2>
+    <p id="demo5">L'evenement onclick() permet de modifier un element. Par exemple : <br>Quelle heure est-il ? : </p>
+    <button onclick="donnerDate()">HEURE</button>
+    <script>function donnerDate(){
+        document.getElementById("demo5").innerHTML+=Date();
+    }</script>
+
+
+    <h2>Methodes en Javascript</h2>
+    <p >La methode toString() permet de changer la base d'un nombre.
+        <br> Entrez un nombre dans le champ puis appuyez sur le bouton.
+    </p>
+    <input type="text" id="champ" value=1>
+    <button onclick="LancerToString()">Valider</button>
+    <p id="demo6"></p>
+    <script>
+        function LancerToString(){
+            var nb = document.getElementById("champ").value;
+            nb = parseInt(nb);
+            document.getElementById("demo6").innerHTML="Nombre : "+nb+"<br>"
+            +"Binaire : "+nb.toString(2)+"<br>Hexa : "+nb.toString(16);
+
+        }
+
+    </script>
+    <h2>Un nombre aleatoire</h2>
+    <p>La fonctionnalite la plus sympatique de tout l'univers de l'info ! 
+        <br>Entre le nombre de faces de ton de.
+    </p>
+
+    <input type="text" id="champ2" value=20>
+    <button onclick="aleatoire()">Lancer le de !</button>
+    <p id="demo7"></p>
+    <script>
+        function aleatoire(){
+            min = 1; max = parseInt(document.getElementById("champ2").value);
+            document.getElementById("demo7").innerHTML="Resultat:"+Math.floor(Math.random()*(max-min)+min)
+        }
+    </script>
+
+    <h2>Exercices d'application</h2>
+    <button id="jsstyle" onclick="js_style()">CLIQUEUH</button>
+    <p id="text">CE TEXTE VA CHANGER PAR MAGIE</p>
+    <script>
+        function js_style()
+        {
+            text.style.fontSize = "14pt";
+            text.style.fontFamily="Comic Sans MS";
+            text.style.color = "green";
+        }
+    </script>
+    <select name="lol" id="colorSelect">
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Yellow</option>
+        <option>Pink</option>
+    </select>
+    <input type="button" onclick="removecolor()" value="Retirer la couleur">
+    <script>function removecolor(){
+        var x = document.getElementById("colorSelect");
+        x.remove(x.selectedIndex);
+    }
+
+
+    </script>
+    <h2>R2cuprer elements d'un formulaire</h2>
+    <form if="frm1" action ="/action_page">
+        First name : <input type="text" name="fname"><br>
+        Last name : <input type="text" name="lname"><br>
+        <input type="button" onclick="myFunction()" value="Valider"> 
+    </form>
+    <script>
+        const queryString = window.location.search;
+        const urlParams= new URLSearchParams(queryString);
+        const fname = urlParams.get('fname');
+        const lname = urlParams.get('lname');
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+- name: Premier Playbook
+  hosts: all
+  become: yes
+  remote_user: vagrant
+  vars:
+    var1: "playbook"
+  tasks:
+  - name: check connexion
+    ping:
+  
+  - name: je debug
+    debug:
+      msg: "Hello {{ var1 }}"
+      
+  - name: création du répertoire /tmp/moi/1/2/3
+    file:
+      path: /tmp/moi/1/2/3
+      recurse: yes
+      state: directory
+      owner: vagrant
+      group: vagrant
+      mode: 0755
+      
+  - name: création du fichier txt /tmp/moi/1/2/3/fichier.txt
+    file:
+      path: /tmp/moi/1/2/3/fichier.txt
+      state: touch
+      owner: vagrant
+      group: vagrant
+      mode: 0755
+      
+  - name: Verification des droits
+    file:
+      path: /tmp/moi/1/2/3/fichier.txt
+      state: file
+      owner: vagrant
+      group: vagrant
+      mode: 0755
+      
+  - name: suppression du répertoire /tmp/moi/
+    file:
+      path: /tmp/moi/
+      state: absent

@@ -1,0 +1,25 @@
+04
+08
+13
+21
+28
+$ cat nom-b-ou-dia.txt
+4,choux de bruxelles,dia
+1,poivron jaune,dia
+2,carrotte,dia
+5,amande,dia
+2,banane,casino
+12,oeufs bio,casino
+4,Framboises,casino
+6,fruit de la passion,dia
+$ cat supermarches.txt
+tomate|banane|choux de bruxelles
+pomme de terre|Ail|poivron jaune
+raisin muscat|orange|carrotte
+Cerise|anis|choux fleur
+melon|oeufs bio|amande
+Ananas|tomate cerise|fruit de la passion
+oignon|Framboises|
+poire|choux fleur|
+tomate||
+poulet intermédiaire||

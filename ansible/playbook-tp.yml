@@ -1,0 +1,22 @@
+- name: Playbook tp
+  hosts: webserver
+  become: yes
+  remote_user: vagrant
+  tasks:
+  - name: creation user apacheadm
+    user: 
+      name: apacheadm
+      state: present
+      groups: sudo
+      password: "{{ 'password' | password_hash('sha512') }}"
+      
+  - name : creation du home pour apacheadm
+    file: 
+      path: /home/apacheadm
+      state: directory
+      owner: apacheadm
+      
+  - name: installer paquet apache2
+    apt: 
+      name: apache2
+      state: latest

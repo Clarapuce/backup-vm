@@ -1,0 +1,22 @@
+Ail#1#casino
+amande#5#dia
+Ananas#1#carrefour
+anis#2#casino
+banane#2#casino
+carotte#2#dia
+Cerise#30#carrefour
+choux de bruxelles#4#dia
+choux fleur#2#casino
+Framboises#4#casino
+fruit de la passion#6#dia
+melon#4#carrefour
+oeufs bio#12#casino
+oignon#3#carrefour
+orange#4#casino
+poire#1#carrefour
+poivron jaune#1#dia
+pomme de terre#7#carrefour
+poulet intermédiaire#1#carrefour
+raisin muscat#7#carrefour
+tomate cerise#6#casino
+tomate#2#carrefour

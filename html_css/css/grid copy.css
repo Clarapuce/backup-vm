@@ -1,0 +1,58 @@
+.container
+{
+    height:90vh;
+    font-family: 'Cinzel', serif;
+    margin :  2rem;
+    /* = 90% de la vue, vh fenetre, rem la fentre par dfaut du navigateur*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* Langage plus naturel :  */
+    grid-template-areas : "header header header"
+                            "left main right"
+                            "footer footer footer";
+    /* Il faut mettre dans les cellules associes grid-area : avec le nom */
+    grid-template-rows : 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap : 10px 10px;
+    /* Premier chiffre = row, deuxime = col  */
+
+    /* On peut aussi crire
+    grid-template-columns: repeat(3,1fr); */
+}
+
+.cell
+{
+    background-color:greenyellow;
+    /* margin sera double par rapport  grid-gap, parce que chaque cellule repousse */
+    text-align: center;
+    font-size:xx-large;
+}
+
+.cell-1
+{
+    background-color:darkmagenta;
+    color : white;
+    grid-area : header
+}
+
+/* Modifier l'emplacement d'une cellule */
+.cell-2
+{
+    background: blue;
+    grid-area : left;
+}
+.cell-3
+{
+    grid-area : main;
+}
+.cell-4
+{
+    background : red;
+    grid-area : right;
+}
+
+.cell-5
+{
+    background : yellow;
+    grid-area : footer;
+}

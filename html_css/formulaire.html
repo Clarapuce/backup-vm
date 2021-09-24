@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/reservation.css" rel="stylesheet">
+
+</head>
+<body>
+    <form>
+        <div class="container">
+        <h1>Formulaire de reservation</h1>
+        <fieldset class="info">
+            <legend>Informations personnelles</legend>
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" required="required" class="nom">
+            <label for="prenom">Prenom : </label>
+            <input type="text" name="prenom"required="required" class="prenom"><br>
+        </fieldset>
+        <fieldset class="type">
+            <legend>Type de reservation :</legend>
+                    <select name="formule">
+            <option value="f1">Formule 1</option>
+            
+            <option value="f2">Formule 2</option>
+            
+            <option value="f3">Formule 3</option> 
+        </select><br>
+        <label for="nb">Nombre de personnes :</label>
+        <input type="number"><br>
+        <label for="lit">Nombre de lits : </label>
+        <label for="lit">2</label>
+        <input type="radio" id="2" name="lit" value="2" >
+        <label for="lit">3</label>
+        <input type="radio" id="3" name="lit" value="3">
+        <label for="lit">4</label>
+        <input type="radio" id="4" name="lit" value="4">
+        <br>
+        <label for="vue">Vue sur la mer : </label>
+        <input type="checkbox" name="vue">
+        <br>
+    </fieldset>
+    <fieldset class="valider">
+        <legend>Valider la reservation</legend>
+        <label for="reduc">Code promo : </label>
+        <input type="text" name="reduc"> <br>
+        <label for="conditions">Accepter les conditions : </label>
+        <input type="checkbox" required="required">
+        <input type="submit" value="Envoyer">
+    
+    </fieldset>
+        
+    </div>
+
+    </form>
+</body>
+</html>

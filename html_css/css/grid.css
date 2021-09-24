@@ -1,0 +1,43 @@
+.container
+{
+    height:90vh;
+    margin :  2rem;
+    /* = 90% de la vue, vh fenetre, rem la fentre par dfaut du navigateur*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* fr veut dire fraction */
+    grid-template-rows : 1fr 1fr 1fr;
+    grid-gap : 10px 10px;
+    /* Premier chiffre = row, deuxime = col  */
+
+    /* On peut aussi crire
+    grid-template-columns: repeat(3,1fr); */
+}
+
+.cell
+{
+    background-color:greenyellow;
+    margin : 2%;
+    /* margin sera double par rapport  grid-gap, parce que chaque cellule repousse */
+    text-align: center;
+    font-size:xx-large;
+}
+
+.cell-5
+{
+    background-color:darkmagenta;
+    color : white;
+}
+
+/* Modifier l'emplacement d'une cellule */
+.cell-7
+{
+    grid-column : 3;
+    grid-row : 2;
+}
+.cell-1
+{
+    grid-row:1;
+    grid-column:1/4;
+}
+

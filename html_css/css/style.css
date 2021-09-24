@@ -1,0 +1,38 @@
+body {
+    margin : 5%;
+}
+
+h2 {
+    color : darkblue;
+    font-size: 30px;
+}
+
+img {
+    width : 100%;
+}
+
+p {
+    padding : 4%;
+    text-align: justify;
+    background-color: #EEEEEE;
+}
+ol li
+{
+    list-style:lower-greek;
+}
+table {
+    width : 80%;
+    border : solid black 2px;
+    text-align: center;
+    background-color: cadetblue;
+    border-collapse: collapse;
+}
+
+th, td {
+    border : solid grey 2px;
+    padding : 3%;
+}
+
+.nav {
+    display : inline-block;
+}
